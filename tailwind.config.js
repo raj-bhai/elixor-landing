@@ -12,6 +12,14 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        'elixzor-dark-purple': '#1a0a28',
+        'elixzor-light-purple': '#d927ff',
+        'elixzor-header-purple': '#c399ff',
+        'elixzor-button-purple': '#8e2de2',
+        'elixzor-button-hover': '#7327b4',
+        'elixzor-footer-purple': '#4e2a87',
+      },
     },
   },
   plugins: [],
