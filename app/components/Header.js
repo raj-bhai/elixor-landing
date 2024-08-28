@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Header() {
   return (
-    <header className="relative bg-[#0e041f] w-screen h-[80px] py-2 text-white">
+    <header className="fixed top-0 left-0 w-full bg-[#0e041f] h-[80px] py-2 text-white z-50">
       {/* Centered Header Image */}
       <div className="flex justify-center items-center">
         <Image
