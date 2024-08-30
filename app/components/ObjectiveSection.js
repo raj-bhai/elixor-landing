@@ -3,7 +3,7 @@ import CTAButton from "./CTAButton";
 export default function ObjectiveSection() {
     return (
       <section className="bg-black w-screen text-white py-16 px-8">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className=" font-sans max-w-4xl mx-auto text-center">
           {/* Subheading */}
           <h3 className="text-pink-500 text-lg font-semibold tracking-wider mb-4">
             MY OBJECTIVE HERE IS SIMPLE...

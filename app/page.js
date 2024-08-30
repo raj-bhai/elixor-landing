@@ -3,14 +3,18 @@ import Header from "./components/Header";
 import LandingSection from "./components/LandingSection";
 import ObjectiveSection from "./components/ObjectiveSection";
 import LearningJourneySection from "./components/LearningJourneySection";
+import AdvancedJourneySection from "./components/AdvancedJourneySection";
+import ResultsSection from "./components/ResultsSection";
 
 export default function Home() {
   return (
-    <main className="flex overflow-x-hidden min-h-screen flex-col items-center justify-between px-24">
+    <main className="flex  bg-black overflow-x-hidden min-h-screen flex-col items-center justify-between px-24">
       <Header />
       <LandingSection/>
       <ObjectiveSection/>
       <LearningJourneySection/>
+      <AdvancedJourneySection/>
+      <ResultsSection/>
     </main>
   );
 }

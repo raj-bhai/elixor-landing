@@ -15,6 +15,9 @@ module.exports = {
       colors: {
         "purple" : "#0e041f"
       },
+      fontFamily: {
+        sans: ['"New Amsterdam"', 'sans-serif'],
+      },
     },
   },
   plugins: [],

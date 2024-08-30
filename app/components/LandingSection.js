@@ -6,7 +6,7 @@ export default function LandingSection() {
   return (
     <section className="relative mt-[50px] bg-purple w-screen h-auto flex flex-col items-center  text-white p-4">
       {/* Heading Section */}
-      <div className="text-center pt-10 sm:w-[60%] w-[80%]">
+      <div className="text-center pt-10 sm:w-[60%] font-sans w-[80%]">
         <h3 className="text-purple-400 text-2xl tracking-wider">FINALLY...</h3>
         <h1 className="text-4xl font-bold uppercase tracking-widest mt-2">
           You can learn one-on-one from the most successful team in Youtube Automation
@@ -28,7 +28,7 @@ export default function LandingSection() {
       </div>
       <CTAButton text="YES! I WANT TO START" subtext="Limited seats available, so book your slot before they run out." />
       {/* Footer Info Section */}
-      <div className="flex w-full justify-around items-center mt-12 py-4 border-t border-purple-600">
+      <div className="flex w-full font-sans justify-around items-center mt-12 py-4 border-t border-purple-600">
         <div className="text-center flex items-center ">
           <svg
             xmlns="http://www.w3.org/2000/svg"

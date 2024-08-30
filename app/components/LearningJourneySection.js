@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function LearningJourneySection() {
   return (
-    <section className="bg-black text-white py-16 px-8 w-full">
+    <section className="bg-black font-sans text-white py-16 px-8 w-full">
       <div className="text-center mb-12">
         {/* Heading */}
         <h3 className="text-purple-500 text-lg font-semibold tracking-wider mb-2">
