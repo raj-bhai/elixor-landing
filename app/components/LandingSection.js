@@ -4,7 +4,7 @@ import CTAButton from './CTAButton';
 
 export default function LandingSection() {
   return (
-    <section className="relative mt-[50px] bg-purple w-screen h-auto flex flex-col items-center  text-white p-4">
+    <section className="relative bg-purple w-screen h-auto flex flex-col items-center  text-white p-4">
       {/* Heading Section */}
       <div className="text-center pt-10 sm:w-[60%] font-sans w-[80%]">
         <h3 className="text-purple-400 text-2xl tracking-wider">FINALLY...</h3>
