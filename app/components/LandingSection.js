@@ -1,24 +1,62 @@
+"use client";
+
+import { useEffect, useState } from 'react';
 import CTAButton from './CTAButton';
 
 export default function LandingSection() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setScrollPosition(position);
+    };
+
+    // Throttle the scroll event for better performance on mobile
+    let throttleTimeout = null;
+    const throttledHandleScroll = () => {
+      if (!throttleTimeout) {
+        throttleTimeout = setTimeout(() => {
+          handleScroll();
+          throttleTimeout = null;
+        }, 100); // Adjust the throttle delay as needed
+      }
+    };
+
+    window.addEventListener('scroll', throttledHandleScroll);
+    return () => {
+      window.removeEventListener('scroll', throttledHandleScroll);
+    };
+  }, []);
+
+  // Adjust maxProximity for mobile screens
+  const maxProximity = window.innerWidth < 640 ? 10 : 20; // Smaller proximity on mobile screens
+  const movement = Math.min(scrollPosition * 0.1, maxProximity);
+
   return (
     <section className="relative w-screen h-auto flex flex-col items-center text-white p-4 bg-purple">
       {/* Background Circle Image on the Left */}
-      <div className="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-[55%] overflow-hidden z-0">
+      <div
+        className="absolute top-1/2 transform -translate-y-1/2 overflow-hidden z-0 transition-transform duration-300"
+        style={{ left: `calc(-55% + ${movement}%)` }}
+      >
         <img 
           src="/images/bg-circle.png"  // Ensure this is the correct path to your image
           alt="Background Circle Left"
-          className="h-[150%] object-cover opacity-100"  // Adjust height if needed
+          className="h-[150%] object-cover opacity-100"
         />
       </div>
 
       {/* Background Circle Image on the Right */}
-      <div className="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-[55%] overflow-hidden z-0">
+      <div
+        className="absolute top-1/2 transform -translate-y-1/2 overflow-hidden z-0 transition-transform duration-300"
+        style={{ right: `calc(-55% + ${movement}%)` }}
+      >
         <img 
           src="/images/bg-circle.png"  // Ensure this is the correct path to your image
           alt="Background Circle Right"
           className="h-[150%] object-cover opacity-100"
-          style={{ transform: 'scaleX(-1)' }}  // Flip the image horizontally
+          style={{ transform: 'scaleX(-1)' }}
         />
       </div>
 
