@@ -2,7 +2,6 @@ import Header from "./components/Header";
 import LandingSection from "./components/LandingSection";
 import ObjectiveSection from "./components/ObjectiveSection";
 import LearningJourneySection from "./components/LearningJourneySection";
-import AdvancedJourneySection from "./components/AdvancedJourneySection";
 import ResultsSection from "./components/ResultsSection";
 import FeaturesSection from "./components/FeaturesSection";
 import ProgressSection from "./components/ProgressSection";
@@ -16,7 +15,6 @@ export default function Home() {
       <LandingSection />
       <ObjectiveSection />
       <LearningJourneySection />
-      <AdvancedJourneySection />
       <ResultsSection />
       <FeaturesSection/>
       <ProgressSection/>
