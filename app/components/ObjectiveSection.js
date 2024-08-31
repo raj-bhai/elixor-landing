@@ -47,7 +47,7 @@ export default function ObjectiveSection() {
             descriptionInView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[50px]'
           } transition-all duration-700 ease-out`}
         >
-          Here's just a mere fraction of the <span className="font-bold text-yellow-400">golden nuggets you'll discover</span> with our coaching program…
+          Here&apos;s just a mere fraction of the <span className="font-bold text-yellow-400">golden nuggets you&apos;ll discover</span> with our coaching program…
         </p>
 
         {/* Bullet Points */}
