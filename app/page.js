@@ -6,6 +6,8 @@ import AdvancedJourneySection from "./components/AdvancedJourneySection";
 import ResultsSection from "./components/ResultsSection";
 import FeaturesSection from "./components/FeaturesSection";
 import ProgressSection from "./components/ProgressSection";
+import FAQSection from "./components/FAQSection";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <ResultsSection />
       <FeaturesSection/>
       <ProgressSection/>
+      <FAQSection/>
+      <Footer/>
     </main>
   );
 }
