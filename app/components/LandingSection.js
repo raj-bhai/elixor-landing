@@ -5,32 +5,33 @@ import CTAButton from './CTAButton';
 
 export default function LandingSection() {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [maxProximity, setMaxProximity] = useState(20);
 
   useEffect(() => {
+    // This code only runs on the client side
     const handleScroll = () => {
       const position = window.scrollY;
       setScrollPosition(position);
     };
 
-    // Throttle the scroll event for better performance on mobile
-    let throttleTimeout = null;
-    const throttledHandleScroll = () => {
-      if (!throttleTimeout) {
-        throttleTimeout = setTimeout(() => {
-          handleScroll();
-          throttleTimeout = null;
-        }, 100); // Adjust the throttle delay as needed
-      }
+    // Adjust maxProximity for mobile screens
+    const updateMaxProximity = () => {
+      const proximity = window.innerWidth < 640 ? 10 : 20;
+      setMaxProximity(proximity);
     };
 
-    window.addEventListener('scroll', throttledHandleScroll);
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', updateMaxProximity);
+
+    // Initialize maxProximity on mount
+    updateMaxProximity();
+
     return () => {
-      window.removeEventListener('scroll', throttledHandleScroll);
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', updateMaxProximity);
     };
   }, []);
 
-  // Adjust maxProximity for mobile screens
-  const maxProximity = window.innerWidth < 640 ? 10 : 20; // Smaller proximity on mobile screens
   const movement = Math.min(scrollPosition * 0.1, maxProximity);
 
   return (
