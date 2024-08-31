@@ -4,6 +4,8 @@ import ObjectiveSection from "./components/ObjectiveSection";
 import LearningJourneySection from "./components/LearningJourneySection";
 import AdvancedJourneySection from "./components/AdvancedJourneySection";
 import ResultsSection from "./components/ResultsSection";
+import FeaturesSection from "./components/FeaturesSection";
+import ProgressSection from "./components/ProgressSection";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <LearningJourneySection />
       <AdvancedJourneySection />
       <ResultsSection />
+      <FeaturesSection/>
+      <ProgressSection/>
     </main>
   );
 }
