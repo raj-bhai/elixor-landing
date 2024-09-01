@@ -34,11 +34,8 @@ export default function ResultsSection() {
   const controls = useAnimation();
   const { scrollY } = useViewportScroll();
 
-  // Define the minimum and maximum scale values for the circles
   const minScale = 1;
   const maxScale = 1.5;
-
-  // Use framer-motion's useTransform to map the scroll position to the scale value
   const scale = useTransform(scrollY, [0, 500], [minScale, maxScale]);
 
   useEffect(() => {
@@ -52,7 +49,7 @@ export default function ResultsSection() {
         }
       },
       {
-        threshold: 0.5, // Adjust this value to determine when the section is considered "in view"
+        threshold: 0.5,
       }
     );
 
@@ -78,7 +75,7 @@ export default function ResultsSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-black font-sans text-white py-16 px-8 w-full overflow-hidden"
+      className="relative bg-black font-sans text-white py-16 px-4 sm:px-8  sm:w-full w-screen overflow-hidden"
     >
       {/* Left Background Half-Circle */}
       <motion.div
@@ -88,7 +85,7 @@ export default function ResultsSection() {
         transition={{ duration: 1 }}
         style={{
           scale,
-          clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%)', // Left half of the circle
+          clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%)',
         }}
       >
         <Image 
@@ -107,7 +104,7 @@ export default function ResultsSection() {
         transition={{ duration: 1 }}
         style={{
           scale,
-          clipPath: 'polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%)', // Right half of the circle
+          clipPath: 'polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%)',
         }}
       >
         <Image 
@@ -115,7 +112,7 @@ export default function ResultsSection() {
           alt="Background Half Circle Right"
           width={300}
           height={300}
-          style={{ transform: 'scaleX(-1)' }} // Flip horizontally to mirror the left side
+          style={{ transform: 'scaleX(-1)' }}
         />
       </motion.div>
 
@@ -134,7 +131,7 @@ export default function ResultsSection() {
           OUR RESULTS
         </motion.h3>
         <motion.h1
-          className="text-4xl font-bold uppercase tracking-wider leading-tight mb-8"
+          className="text-3xl sm:text-4xl font-bold uppercase tracking-wider leading-tight mb-8"
           initial="hidden"
           animate={controls}
           variants={{
@@ -148,7 +145,7 @@ export default function ResultsSection() {
 
         {/* Carousel */}
         <motion.div
-          className="relative bg-gradient-to-b from-purple-900 to-black h-[350px] lg:h-[500px] rounded-lg mb-8 flex items-center justify-between overflow-hidden shadow-lg"
+          className="relative bg-gradient-to-b from-purple-900 to-black h-[300px] sm:h-[350px] lg:h-[450px] rounded-lg mb-8 flex items-center justify-between overflow-hidden shadow-lg"
           initial="hidden"
           animate={controls}
           variants={{
@@ -163,18 +160,18 @@ export default function ResultsSection() {
                 prevIndex === 0 ? slides.length - 1 : prevIndex - 1
               )
             }
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-purple-600 hover:bg-purple-500 text-white text-3xl rounded-full w-12 h-12 flex items-center justify-center z-10 shadow-md transition-colors"
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-purple-600 hover:bg-purple-500 text-white text-3xl rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center z-10 shadow-md transition-colors"
           >
             &#9664;
           </button>
 
-          <div className="relative w-full h-full flex items-center justify-center p-8">
-            <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4">
-              <div className="text-7xl text-purple-400">
+          <div className="relative w-full h-full flex items-center justify-center p-4 sm:p-8">
+            <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="text-6xl sm:text-7xl text-purple-400">
                 {React.createElement(slides[currentIndex].icon)}
               </div>
-              <h2 className="text-3xl font-bold">{slides[currentIndex].title}</h2>
-              <p className="text-lg max-w-2xl">{slides[currentIndex].description}</p>
+              <h2 className="text-2xl sm:text-3xl font-bold">{slides[currentIndex].title}</h2>
+              <p className="text-lg sm:text-xl max-w-2xl">{slides[currentIndex].description}</p>
             </div>
           </div>
 
@@ -182,7 +179,7 @@ export default function ResultsSection() {
             onClick={() =>
               setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
             }
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-purple-600 hover:bg-purple-500 text-white text-3xl rounded-full w-12 h-12 flex items-center justify-center z-10 shadow-md transition-colors"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-purple-600 hover:bg-purple-500 text-white text-3xl rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center z-10 shadow-md transition-colors"
           >
             &#9654;
           </button>

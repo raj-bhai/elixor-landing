@@ -70,7 +70,7 @@ export default function FAQSection() {
   return (
     <section
       ref={ref}
-      className="relative overflow-y-hidden w-screen bg-black text-white py-16 px-8 flex flex-col items-center"
+      className="relative overflow-y-hidden overflow-x-hidden w-screen bg-black text-white py-16 px-8 flex flex-col items-center"
     >
       <div className="max-w-4xl mx-auto relative text-center">
         {/* Subheading */}
