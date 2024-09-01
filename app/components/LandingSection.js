@@ -35,7 +35,7 @@ export default function LandingSection() {
   const movement = Math.min(scrollPosition * 0.1, maxProximity);
 
   return (
-    <section className="relative w-screen h-auto flex flex-col items-center text-white p-4 bg-purple">
+    <section className="relative w-screen sm:-mt-0 -mt-[40px] h-auto flex flex-col items-center text-white p-4 bg-purple">
       {/* Background Circle Image on the Left */}
       <div
         className="absolute top-1/2 transform -translate-y-1/2 overflow-hidden z-0 transition-transform duration-300"

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import CTAButton from './CTAButton';
 import { motion } from 'framer-motion';
 import useInView from './useInView';
+import { FaArrowRight } from 'react-icons/fa'; // Importing a single arrow icon
 
 export default function ProgressSection() {
   // Use the custom useInView hook to trigger animations when the section enters the viewport
@@ -89,27 +90,27 @@ export default function ProgressSection() {
           {/* 3rd Month Details */}
           <div>
             <ul className="space-y-2 text-lg">
-              <li>Engaging Audience</li>
-              <li>$250-$500 INCOME</li>
-              <li>Finalizing branding and style</li>
+              <li className="flex items-start"><FaArrowRight className="mt-1 text-xl text-purple-500 mr-2" />Engaging Audience</li>
+              <li className="flex items-start"><FaArrowRight className="mt-1 text-xl text-purple-500 mr-2" />$250-$500 INCOME</li>
+              <li className="flex items-start"><FaArrowRight className="mt-1 text-xl text-purple-500 mr-2" />Finalizing branding and style</li>
             </ul>
           </div>
 
           {/* 6th Month Details */}
           <div>
             <ul className="space-y-2 text-lg">
-              <li>Plans for diversifying</li>
-              <li>$1000+ INCOME</li>
-              <li>Brand deals and more...</li>
+              <li className="flex items-start"><FaArrowRight className="mt-1 text-xl text-purple-500 mr-2" />Plans for diversifying</li>
+              <li className="flex items-start"><FaArrowRight className="mt-1 text-xl text-purple-500 mr-2" />$1000+ INCOME</li>
+              <li className="flex items-start"><FaArrowRight className="mt-1 text-xl text-purple-500 mr-2" />Brand deals and more...</li>
             </ul>
           </div>
 
           {/* 12th Month Details */}
           <div>
             <ul className="space-y-2 text-lg">
-              <li>Business</li>
-              <li>$5000+ INCOME</li>
-              <li>Multiple income sources + channels</li>
+              <li className="flex items-start"><FaArrowRight className="mt-1 text-xl text-purple-500 mr-2" />Business</li>
+              <li className="flex items-start"><FaArrowRight className="mt-1 text-xl text-purple-500 mr-2" />$5000+ INCOME</li>
+              <li className="flex items-start"><FaArrowRight className="mt-1 text-xl text-purple-500 mr-2" />Multiple income sources + channels</li>
             </ul>
           </div>
         </motion.div>

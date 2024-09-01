@@ -28,7 +28,7 @@ const FAQItem = ({ question, answer, isInView }) => {
         initial={false}
         animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
         transition={{ duration: 0.3 }}
-        className="overflow-hidden mt-2"
+        className="overflow-hidden mt-2 text-left "
       >
         <p className="text-sm leading-relaxed">{answer}</p>
       </motion.div>
