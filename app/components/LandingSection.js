@@ -38,25 +38,25 @@ export default function LandingSection() {
     <section className="relative w-screen sm:-mt-0 -mt-[40px] h-auto flex flex-col items-center text-white p-4 bg-purple">
       {/* Background Circle Image on the Left */}
       <div
-        className="absolute top-1/2 transform -translate-y-1/2 overflow-hidden z-0 transition-transform duration-300"
+        className="absolute top-1/4 transform -translate-y-1/2 overflow-hidden z-0 transition-transform duration-300"
         style={{ left: `calc(-55% + ${movement}%)` }}
       >
         <img 
           src="/images/bg-circle.png"  // Ensure this is the correct path to your image
           alt="Background Circle Left"
-          className="h-[150%] object-cover opacity-100"
+          className="sm:h-[150%] object-cover opacity-100"
         />
       </div>
 
       {/* Background Circle Image on the Right */}
       <div
-        className="absolute top-1/2 transform -translate-y-1/2 overflow-hidden z-0 transition-transform duration-300"
+        className="absolute sm:top-1/2 top-2/3 transform -translate-y-1/2 overflow-hidden z-0 transition-transform duration-300"
         style={{ right: `calc(-55% + ${movement}%)` }}
       >
         <img 
           src="/images/bg-circle.png"  // Ensure this is the correct path to your image
           alt="Background Circle Right"
-          className="h-[150%] object-cover opacity-100"
+          className="h-[150%] object-cover sm:opacity-100 opacity-70 "
           style={{ transform: 'scaleX(-1)' }}
         />
       </div>
