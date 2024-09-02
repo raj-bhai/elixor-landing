@@ -16,7 +16,8 @@ export default function ProgressSection() {
     >
       {isInView && (
         <motion.div
-          className="absolute w-[150px] h-[150px] sm:w-[400px] sm:h-[400px] bg-gradient-to-r from-purple to-purple rounded-full z-0"
+          className="absolute w-[150px] h-[150px] sm:w-[400px] sm:h-[400px] bg-gradient-to-r from-purple to-purple rounded-full z-0 "
+          style={{ opacity: 0.3 }} 
           animate={{
             x: ["-20%", "120%"],
             y: ["0%", "30%", "-20%"],
