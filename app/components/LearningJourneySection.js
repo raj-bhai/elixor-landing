@@ -1,8 +1,9 @@
 import Image from 'next/image';
+import { FaArrowRight } from 'react-icons/fa';
 
 export default function LearningJourneySection() {
   return (
-    <section className="bg-black font-sans text-white py-8 sm:py-16 px-4 sm:px-8 w-full">
+    <section className="bg-black font-sans text-white py-8 sm:py-16 px-4 sm:px-8 w-screen sm:w-full">
       <div className="text-center mb-8 sm:mb-12">
         {/* Heading */}
         <h3 className="text-purple-500 text-md sm:text-lg font-semibold tracking-wider mb-2">
@@ -28,12 +29,18 @@ export default function LearningJourneySection() {
             </div>
           </div>
           <div className="flex justify-center items-center lg:w-1/3 my-4 lg:my-0">
-            <Image src="/images/key1.png" alt="Key 1" width={120} height={240} />
+            <Image src="/images/key1.png" alt="Key 1" width={80} height={120} />
           </div>
           <ul className="lg:w-1/3 text-center lg:text-left text-md sm:text-lg space-y-2">
-            <li>What is YTA</li>
-            <li>Mythbusters</li>
-            <li>Expectations</li>
+            <li className="flex items-center">
+              <FaArrowRight className="mr-2" /> What is YTA
+            </li>
+            <li className="flex items-center">
+              <FaArrowRight className="mr-2" /> Mythbusters
+            </li>
+            <li className="flex items-center">
+              <FaArrowRight className="mr-2" /> Expectations
+            </li>
           </ul>
         </div>
 
@@ -49,12 +56,18 @@ export default function LearningJourneySection() {
             </div>
           </div>
           <div className="flex justify-center items-center lg:w-1/3 my-4 lg:my-0">
-            <Image src="/images/key2.png" alt="Key 2" width={120} height={240} />
+            <Image src="/images/key2.png" alt="Key 2" width={80} height={120} />
           </div>
           <ul className="lg:w-1/3 text-center lg:text-left text-md sm:text-lg space-y-2">
-            <li>Niche + Topics</li>
-            <li>Content Creation</li>
-            <li>Psychology Behind Content</li>
+            <li className="flex items-center">
+              <FaArrowRight className="mr-2" /> Niche + Topics
+            </li>
+            <li className="flex items-center">
+              <FaArrowRight className="mr-2" /> Content Creation
+            </li>
+            <li className="flex items-center">
+              <FaArrowRight className="mr-2" /> Psychology Behind Content
+            </li>
           </ul>
         </div>
 
@@ -70,12 +83,18 @@ export default function LearningJourneySection() {
             </div>
           </div>
           <div className="flex justify-center items-center lg:w-1/3 my-4 lg:my-0">
-            <Image src="/images/key3.png" alt="Key 3" width={120} height={240} />
+            <Image src="/images/key3.png" alt="Key 3" width={80} height={120} />
           </div>
           <ul className="lg:w-1/3 text-center lg:text-left text-md sm:text-lg space-y-2">
-            <li>Monetisation</li>
-            <li>Setup Adsense</li>
-            <li>Delegation</li>
+            <li className="flex items-center">
+              <FaArrowRight className="mr-2" /> Monetisation
+            </li>
+            <li className="flex items-center">
+              <FaArrowRight className="mr-2" /> Setup Adsense
+            </li>
+            <li className="flex items-center">
+              <FaArrowRight className="mr-2" /> Delegation
+            </li>
           </ul>
         </div>
 
@@ -91,12 +110,18 @@ export default function LearningJourneySection() {
             </div>
           </div>
           <div className="flex justify-center items-center lg:w-1/3 my-4 lg:my-0">
-            <Image src="/images/key4.png" alt="Key 4" width={120} height={240} />
+            <Image src="/images/key4.png" alt="Key 4" width={80} height={120} />
           </div>
           <ul className="lg:w-1/3 text-center lg:text-left text-md sm:text-lg space-y-2">
-            <li>Finding Gems</li>
-            <li>Management</li>
-            <li>SOPs</li>
+            <li className="flex items-center">
+              <FaArrowRight className="mr-2" /> Finding Gems
+            </li>
+            <li className="flex items-center">
+              <FaArrowRight className="mr-2" /> Management
+            </li>
+            <li className="flex items-center">
+              <FaArrowRight className="mr-2" /> SOPs
+            </li>
           </ul>
         </div>
 
@@ -112,12 +137,18 @@ export default function LearningJourneySection() {
             </div>
           </div>
           <div className="flex justify-center items-center lg:w-1/3 my-4 lg:my-0">
-            <Image src="/images/key5.png" alt="Key 5" width={120} height={240} />
+            <Image src="/images/key5.png" alt="Key 5" width={80} height={120} />
           </div>
           <ul className="lg:w-1/3 text-center lg:text-left text-md sm:text-lg space-y-2">
-            <li>Businesses</li>
-            <li>Multiple Channels</li>
-            <li>Softwares And Automation</li>
+            <li className="flex items-center">
+              <FaArrowRight className="mr-2" /> Businesses
+            </li>
+            <li className="flex items-center">
+              <FaArrowRight className="mr-2" /> Multiple Channels
+            </li>
+            <li className="flex items-center">
+              <FaArrowRight className="mr-2" /> Softwares And Automation
+            </li>
           </ul>
         </div>
       </div>

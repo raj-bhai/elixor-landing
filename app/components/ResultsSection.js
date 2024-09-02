@@ -160,7 +160,7 @@ export default function ResultsSection() {
                 prevIndex === 0 ? slides.length - 1 : prevIndex - 1
               )
             }
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-purple-600 hover:bg-purple-500 text-white text-3xl rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center z-10 shadow-md transition-colors"
+            className="hidden sm:flex absolute left-4 top-1/2 transform -translate-y-1/2 bg-purple-600 hover:bg-purple-500 text-white text-3xl rounded-full w-10 h-10 sm:w-12 sm:h-12 items-center justify-center z-10 shadow-md transition-colors"
           >
             &#9664;
           </button>
@@ -179,7 +179,7 @@ export default function ResultsSection() {
             onClick={() =>
               setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
             }
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-purple-600 hover:bg-purple-500 text-white text-3xl rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center z-10 shadow-md transition-colors"
+            className="hidden sm:flex absolute right-4 top-1/2 transform -translate-y-1/2 bg-purple-600 hover:bg-purple-500 text-white text-3xl rounded-full w-10 h-10 sm:w-12 sm:h-12 items-center justify-center z-10 shadow-md transition-colors"
           >
             &#9654;
           </button>
