@@ -8,6 +8,8 @@ import FeaturesSection from "./components/FeaturesSection";
 import ProgressSection from "./components/ProgressSection";
 import FAQSection from "./components/FAQSection";
 import Footer from "./components/Footer";
+import CurriculumSection from "./components/CurriculumSection";
+import PricingSection from "./components/PricingSection";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <LearningJourneySection />
       <ResultsSection />
       <CoachingFeaturesSection/>
+      <CurriculumSection/>
+      <PricingSection/>
       <FeaturesSection/>
       <ProgressSection/>
       <FAQSection/>
