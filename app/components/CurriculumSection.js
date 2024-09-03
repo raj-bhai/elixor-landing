@@ -8,11 +8,8 @@ export default function CurriculumSection() {
     <section className="relative w-screen sm:w-full bg-black text-white py-16 px-4 sm:px-8 flex flex-col items-center overflow-hidden">
       {/* Cohort Curriculum Section */}
       <div className="text-center mb-12">
-        <h1 className="text-purple-500 text-lg sm:text-xl font-semibold tracking-wider mb-2">
-          COHORT CURRICULUM
-        </h1>
         <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-wider leading-tight">
-          ELIXZOR
+        COHORT CURRICULUM
         </h2>
       </div>
 

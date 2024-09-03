@@ -51,19 +51,19 @@ export default function FAQSection() {
         "After you are eligible for monetization on YouTube (which you are from DAY 1 with us) You can generate income through ads. You can even generate income from sponsorships and affiliate marketing. Consistently upload content to grow your audience and increase revenue streams.",
     },
     {
-      question: "How to make money with Youtube Automation?",
+      question: "Who will own and control my channel?",
       answer:
-        "After you are eligible for monetization on YouTube (which you are from DAY 1 with us) You can generate income through ads. You can even generate income from sponsorships and affiliate marketing. Consistently upload content to grow your audience and increase revenue streams.",
+        "Once you get started with us, the owner invitation of the channel will be sent to your email and each and every step, from deciding the niche to uploading the first video, everything will be in your control. 100% control over everything.",
     },
     {
-      question: "How to make money with Youtube Automation?",
+      question: "How does the guarantee of the program works?",
       answer:
-        "After you are eligible for monetization on YouTube (which you are from DAY 1 with us) You can generate income through ads. You can even generate income from sponsorships and affiliate marketing. Consistently upload content to grow your audience and increase revenue streams.",
+        "If within the first two weeks or first 5 classes, you don't think that its valuable and start to learn everything live and understand how youtube automation works, you can get your money back, no questions asked.",
     },
     {
-      question: "How to make money with Youtube Automation?",
+      question: "Why ELIXZOR ?",
       answer:
-        "After you are eligible for monetization on YouTube (which you are from DAY 1 with us) You can generate income through ads. You can even generate income from sponsorships and affiliate marketing. Consistently upload content to grow your audience and increase revenue streams.",
+        "It’s simple, because we have the most experience and the most data but don’t take our word for it. You can scour freelancing websites or the internet and if you manage to find any other coaching program or course better than us in terms of results and quality, we will close our company on that same day.",
     },
   ]);
 

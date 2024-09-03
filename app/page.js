@@ -10,6 +10,7 @@ import FAQSection from "./components/FAQSection";
 import Footer from "./components/Footer";
 import CurriculumSection from "./components/CurriculumSection";
 import PricingSection from "./components/PricingSection";
+import Schedule from "./components/Schedule";
 
 export default function Home() {
   return (
@@ -22,8 +23,9 @@ export default function Home() {
       <CoachingFeaturesSection/>
       <CurriculumSection/>
       <PricingSection/>
-      <FeaturesSection/>
-      <ProgressSection/>
+      <Schedule/>
+      {/* <FeaturesSection/> */}
+      {/* <ProgressSection/> */}
       <FAQSection/>
       <Footer/>
     </main>
