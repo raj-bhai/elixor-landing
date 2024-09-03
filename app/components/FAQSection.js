@@ -21,7 +21,7 @@ const FAQItem = ({ question, answer, isInView }) => {
       transition={{ duration: 0.5 }}
     >
       <div className="flex justify-between items-center">
-        <h3 className="text-lg font-semibold">{question}</h3>
+        <h3 className="text-lg text-left font-semibold">{question}</h3>
         <span className="text-2xl font-bold">{isOpen ? "−" : "+"}</span>
       </div>
       <motion.div
