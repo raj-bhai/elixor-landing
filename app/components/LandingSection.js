@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import CTAButton from './CTAButton';
+import Image from 'next/image';
 
 export default function LandingSection() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -38,8 +39,9 @@ export default function LandingSection() {
     <section className="relative w-screen sm:-mt-0 -mt-[40px] h-auto flex flex-col items-center text-white p-4 bg-purple">
       {/* Background Circle Image on the Left */}
       <div
-        className="absolute top-1/4 transform -translate-y-1/2 overflow-hidden z-0 transition-transform duration-300"
-        style={{ left: `calc(-55% + ${movement}%)` }}
+        className="absolute top-1/4 sm:top-1/3 transform -translate-y-1/2 overflow-hidden z-0 transition-transform duration-300"
+        // style={{ left: `calc(-55% + ${movement}%)` }}
+        style={{ left: `calc(-45%)` }}
       >
         <img 
           src="/images/bg-circle.png"  // Ensure this is the correct path to your image
@@ -50,8 +52,9 @@ export default function LandingSection() {
 
       {/* Background Circle Image on the Right */}
       <div
-        className="absolute sm:top-1/2 top-2/3 transform -translate-y-1/2 overflow-hidden z-0 transition-transform duration-300"
-        style={{ right: `calc(-55% + ${movement}%)` }}
+        className="absolute sm:top-1/3 top-2/3 transform -translate-y-1/2 overflow-hidden z-0 transition-transform duration-300"
+        // style={{ right: `calc(-55% + ${movement}%)` }}
+        style={{ right: `calc(-45%)` }}
       >
         <img 
           src="/images/bg-circle.png"  // Ensure this is the correct path to your image
@@ -63,17 +66,17 @@ export default function LandingSection() {
 
       {/* Heading Section */}
       <div className="relative z-10 text-center pt-6 sm:w-[80%] md:w-[70%] lg:w-[60%] w-[90%] font-sans">
-        <h3 className="text-purple-400 text-2xl sm:text-3xl font-semibold tracking-wide">
+        <h3 className="text-purple-400 text-2xl sm:text-2xl font-semibold tracking-wide">
           FINALLY...
         </h3>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase tracking-wider mt-4 leading-tight">
+        <h1 className="text-3xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-wider mt-4 leading-tight">
           You Can Learn One-On-One From The Most Successful Team in YouTube Automation
         </h1>
       </div>
 
       {/* Video Placeholder */}
       <div className="relative z-10 flex justify-center items-center mt-8 sm:mt-12 w-full">
-        <div className="w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-4xl h-[200px] sm:h-[300px] md:h-[350px] lg:h-[400px] bg-[#000] rounded-lg shadow-xl overflow-hidden">
+        <div className="w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-2xl h-[200px] sm:h-[300px] md:h-[350px] lg:h-[350px] bg-[#000] rounded-lg shadow-xl overflow-hidden">
           <video className="w-full h-full object-cover" controls>
             <source src="/videos/sample-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -82,7 +85,7 @@ export default function LandingSection() {
       </div>
 
       {/* Call to Action Button */}
-      <div className="relative z-10 mt-8 sm:mt-12">
+      <div className="relative z-10 mt-8 sm:mt-6">
         <CTAButton
           text="YES! I WANT TO START"
           subtext="Limited seats available, so book your slot before they run out."
@@ -90,7 +93,23 @@ export default function LandingSection() {
       </div>
 
       {/* Footer Info Section */}
-      <div className="relative z-10 flex flex-col sm:flex-row w-full justify-around items-center mt-12 sm:mt-16 py-6 border-t border-purple-600 font-sans">
+      <div className="relative z-10 flex flex-col sm:flex-row w-full justify-around items-center mt-12 sm:mt-16 py-6 font-sans">
+      <div className="absolute left-0 top-0 w-full h-[20px] sm:h-[30px] md:h-[30px] lg:h-[20px] flex items-end">
+        <Image
+          src="/images/line.png"
+          alt="Decorative Pink Line"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <div className="absolute left-0 -bottom-8 w-full h-[20px] sm:h-[30px] md:h-[30px] lg:h-[20px] flex items-end">
+        <Image
+          src="/images/line.png"
+          alt="Decorative Pink Line"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
         <div className="text-center flex items-center mb-4 sm:mb-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
