@@ -1,3 +1,5 @@
+"use client";
+
 import Header from "./components/Header";
 import LandingSection from "./components/LandingSection";
 import ObjectiveSection from "./components/ObjectiveSection";
@@ -11,6 +13,10 @@ import Footer from "./components/Footer";
 import CurriculumSection from "./components/CurriculumSection";
 import PricingSection from "./components/PricingSection";
 import Schedule from "./components/Schedule";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY);
 
 export default function Home() {
   return (
@@ -22,7 +28,9 @@ export default function Home() {
       <ResultsSection />
       <CoachingFeaturesSection/>
       <CurriculumSection/>
+      <Elements stripe={stripePromise} >
       <PricingSection/>
+      </Elements>
       <Schedule/>
       {/* <FeaturesSection/> */}
       {/* <ProgressSection/> */}

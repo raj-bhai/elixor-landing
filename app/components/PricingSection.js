@@ -1,9 +1,27 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
+import { useStripe } from "@stripe/react-stripe-js";
+import axios from "axios";
 
 export default function PricingSection() {
+  const stripe = useStripe();
+
+  const handleCheckout = async (priceId) => {
+    console.log('hello')
+    try {
+      const response = await axios.post("/api/checkout", { priceId });
+      console.log('response :', response)
+      const { sessionId } = response.data;
+      const { error } = await stripe.redirectToCheckout({ sessionId });
+      if (error) {
+        console.error(error.message);
+      }
+    } catch (error) {
+      console.error("Error creating checkout session", error);
+    }
+  };
+
   return (
     <section className="relative w-screen md:w-full bg-black text-white py-16 px-4 flex flex-col items-center overflow-hidden">
       <div className="flex flex-col sm:flex-row justify-center items-center space-y-8 sm:space-y-0 sm:space-x-8 w-full max-w-5xl">
@@ -30,6 +48,7 @@ export default function PricingSection() {
             className="mt-4 py-3 px-6 rounded-full bg-green-600 hover:bg-green-700 text-white text-xl font-semibold"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
+            onClick={() => handleCheckout("price_1PvGztSB8NyItH1JShNOjZqt")} // Replace with actual price ID
           >
             Get Access Now!
           </motion.button>
@@ -61,6 +80,7 @@ export default function PricingSection() {
             className="mt-4 py-3 px-6 rounded-full bg-green-600 hover:bg-green-700 text-white text-xl font-semibold"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
+            onClick={() => handleCheckout("price_1PvH11SB8NyItH1J2Sfm6g3n")} // Replace with actual price ID
           >
             Get Access Now!
           </motion.button>
@@ -91,6 +111,7 @@ export default function PricingSection() {
             className="mt-4 py-3 px-6 rounded-full bg-green-600 hover:bg-green-700 text-white text-xl font-semibold"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
+            onClick={() => handleCheckout("price_1PvH23SB8NyItH1Jm5FfQNq0")} // Replace with actual price ID
           >
             Get Access Now!
           </motion.button>
