@@ -10,7 +10,7 @@ export default function ObjectiveSection() {
   const [bulletPointsRef, bulletPointsInView] = useInView({ threshold: 0.1 });
 
   return (
-    <section className="relative bg-gradient-to-r from-black via-purple to-black w-screen text-white py-16 px-8">
+    <section className="relative font-sans bg-gradient-to-r from-black via-purple to-black w-screen text-white py-16 px-8">
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-purple via-transparent to-purple opacity-20"></div>
       
@@ -28,7 +28,7 @@ export default function ObjectiveSection() {
         {/* Main Heading */}
         <h1
           ref={headingRef}
-          className={`text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-wider leading-tight mb-8 ${
+          className={`text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-wider leading-tight mb-8 ${
             headingInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[-20px]'
           } transition-all duration-700 ease-out`}
         >

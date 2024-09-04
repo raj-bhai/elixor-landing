@@ -12,7 +12,7 @@ export default function FeaturesSection() {
       <div className="text-center max-w-4xl mx-auto relative">
         {/* Subheading with Motion */}
         <motion.h3
-          className="text-light-purple text-lg font-semibold tracking-wider mb-4"
+          className="text-light-purple font-sans text-lg font-semibold tracking-wider mb-4"
           initial={{ opacity: 0, y: -20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
           transition={{ duration: 0.6 }}
@@ -22,7 +22,7 @@ export default function FeaturesSection() {
 
         {/* Main Heading with Motion */}
         <motion.h1
-          className="text-4xl font-bold uppercase tracking-wider leading-tight mb-12"
+          className="text-4xl font-bold font-sans uppercase tracking-wider leading-tight mb-12"
           initial={{ opacity: 0, y: -20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
           transition={{ duration: 0.8 }}

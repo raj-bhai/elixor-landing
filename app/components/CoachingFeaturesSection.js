@@ -7,10 +7,10 @@ export default function CoachingFeaturesSection() {
   return (
     <section className="relative w-screen sm:w-full bg-black text-white py-16 px-4 flex flex-col items-center overflow-hidden">
       <div className="text-center mb-12">
-        <h3 className="text-light-purple text-lg sm:text-xl font-semibold tracking-wider mb-2">
+        <h3 className="text-light-purple font-sans text-lg sm:text-xl font-semibold tracking-wider mb-2">
           EVERYTHING YOU GET...
         </h3>
-        <h1 className="text-3xl sm:text-4xl font-bold uppercase tracking-wider leading-tight">
+        <h1 className="text-3xl sm:text-4xl font-sans font-bold uppercase tracking-wider leading-tight">
           ALL THE FEATURES AND PERKS OF OUR COACHING PROGRAM
         </h1>
       </div>

@@ -117,7 +117,7 @@ export default function ResultsSection() {
       <div className="max-w-6xl mx-auto text-center relative z-10">
         {/* Heading */}
         <motion.h3
-          className="text-light-purple text-lg font-semibold tracking-wider mb-2"
+          className="text-light-purple font-sans text-lg font-semibold tracking-wider mb-2"
           initial="hidden"
           animate={controls}
           variants={{
@@ -129,7 +129,7 @@ export default function ResultsSection() {
           OUR RESULTS
         </motion.h3>
         <motion.h1
-          className="text-3xl sm:text-4xl font-bold uppercase tracking-wider leading-tight mb-8"
+          className="text-3xl font-sans sm:text-4xl font-bold uppercase tracking-wider leading-tight mb-8"
           initial="hidden"
           animate={controls}
           variants={{

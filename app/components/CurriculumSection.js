@@ -62,13 +62,13 @@ export default function CurriculumSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-2xl text-light-purple sm:text-3xl font-bold uppercase tracking-wider leading-tight">
+          <h2 className="text-2xl font-sans text-light-purple sm:text-3xl font-bold uppercase tracking-wider leading-tight">
             COHORT CURRICULUM
           </h2>
         </motion.div>
       )}
 
-      <div className="text-left w-full sm:w-[80%] lg:w-[70%] space-y-4 mb-6 z-10">
+      <div className="text-left font-sans w-full sm:w-[80%] lg:w-[70%] space-y-4 mb-6 z-10">
         {bulletPoints.slice(0, 9).map((point, index) => (
           <motion.p
             key={index}
