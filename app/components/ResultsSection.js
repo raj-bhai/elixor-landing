@@ -1,28 +1,60 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from 'react';
-import { motion, useAnimation, useTransform, useViewportScroll } from 'framer-motion';
-import CTAButton from './CTAButton';
-import { FaDollarSign, FaChartLine, FaTrophy } from 'react-icons/fa';
-import Image from 'next/image';
+import React, { useState, useEffect, useRef } from "react";
+import {
+  motion,
+  useAnimation,
+  useTransform,
+  useViewportScroll,
+} from "framer-motion";
+import CTAButton from "./CTAButton";
+import Image from "next/image";
 
 export default function ResultsSection() {
   const slides = [
     {
       id: 1,
-      image: '/images/testimonial1.png'
+      image: "/images/vid-tesimonial1.mp4",
     },
     {
       id: 2,
-      image: '/images/testimonial2.png'
+      image: "/images/vid-testimonial2.mp4",
     },
     {
       id: 3,
-      image: '/images/testimonial3.png'
+      image: "/images/vid-testimonial3.mp4",
     },
     {
-      id: 3,
-      image: '/images/testimonial4.png'
+      id: 4,
+      image: "/images/vid-testimonial4.mp4",
+    },
+    {
+      id: 5,
+      image: "/images/vid-testimonial5.mp4",
+    },
+    {
+      id: 6,
+      image: "/images/vid-testimonial6.mp4",
+    },
+    {
+      id: 7,
+      image: "/images/vid-testimonial7.mp4",
+    },
+    {
+      id: 8,
+      image: "/images/vid-testimonial8.mp4",
+    },
+    {
+      id: 9,
+      image: "/images/vid-testimonial9.mp4",
+    },
+    {
+      id: 10,
+      image: "/images/vid-testimonial10.mp4",
+    },
+    {
+      id: 11,
+      image: "/images/vid-testimonial11.mp4",
     },
   ];
 
@@ -41,9 +73,9 @@ export default function ResultsSection() {
       ([entry]) => {
         setInView(entry.isIntersecting);
         if (entry.isIntersecting) {
-          controls.start('visible');
+          controls.start("visible");
         } else {
-          controls.start('hidden');
+          controls.start("hidden");
         }
       },
       {
@@ -65,7 +97,7 @@ export default function ResultsSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 5000);
+    }, 15000);
 
     return () => clearInterval(interval);
   }, [slides.length]);
@@ -164,17 +196,28 @@ export default function ResultsSection() {
           </button>
 
           <div className="relative border w-full h-full flex items-center justify-center p-4 sm:p-8">
+          <div className="absolute inset-0 flex items-center justify-center z-0">
+          <div className="loader"></div>
+        </div>
             <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="relative w-full h-full p-4 sm:p-32 flex items-center justify-center">
+              <div className="relative w-full h-full p-4 sm:px-16 flex items-center justify-center">
                 <div className="relative w-full h-full">
-                  {" "}
-                  {/* Inner wrapper to contain the image */}
-                  <Image
-                    src={slides[currentIndex].image}
-                    alt="Background Half Circle Right"
-                    layout="fill" // Fills the inner container
-                    objectFit="cover" // Maintains aspect ratio
-                  />
+                  {slides[currentIndex].image.endsWith(".mp4") ? (
+                    <video
+                      src={slides[currentIndex].image}
+                      autoPlay
+                      loop
+                      muted
+                      className="w-full h-full object-cover rounded-md "
+                    />
+                  ) : (
+                    <Image
+                      src={slides[currentIndex].image}
+                      alt="Background Half Circle Right"
+                      layout="fill" // Fills the inner container
+                      objectFit="cover" // Maintains aspect ratio
+                    />
+                  )}
                 </div>
               </div>
             </div>
