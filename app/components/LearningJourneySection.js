@@ -6,7 +6,7 @@ export default function LearningJourneySection() {
     <section className="bg-black font-sans text-white py-8 sm:py-16 px-4 sm:px-8 w-screen sm:w-full">
       <div className="text-center mb-8 sm:mb-12">
         {/* Heading */}
-        <h3 className="text-purple-500 text-md sm:text-lg font-semibold tracking-wider mb-2">
+        <h3 className="text-light-purple text-md sm:text-lg font-semibold tracking-wider mb-2">
           YOUR JOURNEY WITH US...
         </h3>
 
@@ -28,10 +28,10 @@ export default function LearningJourneySection() {
               <span className="text-2xl sm:text-4xl">LEARNING</span>
             </div>
           </div>
-          <div className="flex justify-center items-center lg:w-1/3 my-4 lg:my-0">
+          <div className="flex justify-center items-center lg:w-1/6 my-4 lg:my-0 lg:mr-2">
             <Image src="/images/key1.png" alt="Key 1" width={80} height={120} />
           </div>
-          <ul className="lg:w-1/3 text-center lg:text-left text-md sm:text-lg space-y-2">
+          <ul className="lg:w-1/3 text-center lg:text-left text-md sm:text-lg space-y-2 lg:space-y-1">
             <li className="flex items-center">
               <FaArrowRight className="mr-2" /> What is YTA
             </li>
@@ -55,10 +55,10 @@ export default function LearningJourneySection() {
               <span className="text-2xl sm:text-4xl">UNDERSTANDING</span>
             </div>
           </div>
-          <div className="flex justify-center items-center lg:w-1/3 my-4 lg:my-0">
+          <div className="flex justify-center items-center lg:w-1/6 my-4 lg:my-0 lg:mr-2">
             <Image src="/images/key2.png" alt="Key 2" width={80} height={120} />
           </div>
-          <ul className="lg:w-1/3 text-center lg:text-left text-md sm:text-lg space-y-2">
+          <ul className="lg:w-1/3 text-center lg:text-left text-md sm:text-lg space-y-2 lg:space-y-1">
             <li className="flex items-center">
               <FaArrowRight className="mr-2" /> Niche + Topics
             </li>
@@ -82,10 +82,10 @@ export default function LearningJourneySection() {
               <span className="text-2xl sm:text-4xl">GROWING</span>
             </div>
           </div>
-          <div className="flex justify-center items-center lg:w-1/3 my-4 lg:my-0">
+          <div className="flex justify-center items-center lg:w-1/6 my-4 lg:my-0 lg:mr-2">
             <Image src="/images/key3.png" alt="Key 3" width={80} height={120} />
           </div>
-          <ul className="lg:w-1/3 text-center lg:text-left text-md sm:text-lg space-y-2">
+          <ul className="lg:w-1/3 text-center lg:text-left text-md sm:text-lg space-y-2 lg:space-y-1">
             <li className="flex items-center">
               <FaArrowRight className="mr-2" /> Monetisation
             </li>
@@ -109,10 +109,10 @@ export default function LearningJourneySection() {
               <span className="text-2xl sm:text-4xl">SCALING</span>
             </div>
           </div>
-          <div className="flex justify-center items-center lg:w-1/3 my-4 lg:my-0">
+          <div className="flex justify-center items-center lg:w-1/6 my-4 lg:my-0 lg:mr-2">
             <Image src="/images/key4.png" alt="Key 4" width={80} height={120} />
           </div>
-          <ul className="lg:w-1/3 text-center lg:text-left text-md sm:text-lg space-y-2">
+          <ul className="lg:w-1/3 text-center lg:text-left text-md sm:text-lg space-y-2 lg:space-y-1">
             <li className="flex items-center">
               <FaArrowRight className="mr-2" /> Finding Gems
             </li>
@@ -136,10 +136,10 @@ export default function LearningJourneySection() {
               <span className="text-2xl sm:text-4xl">MASTERING</span>
             </div>
           </div>
-          <div className="flex justify-center items-center lg:w-1/3 my-4 lg:my-0">
+          <div className="flex justify-center items-center lg:w-1/6 my-4 lg:my-0 lg:mr-2">
             <Image src="/images/key5.png" alt="Key 5" width={80} height={120} />
           </div>
-          <ul className="lg:w-1/3 text-center lg:text-left text-md sm:text-lg space-y-2">
+          <ul className="lg:w-1/3 text-center lg:text-left text-md sm:text-lg space-y-2 lg:space-y-1">
             <li className="flex items-center">
               <FaArrowRight className="mr-2" /> Businesses
             </li>

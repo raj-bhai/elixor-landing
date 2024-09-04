@@ -18,7 +18,7 @@ export default function ObjectiveSection() {
         {/* Subheading */}
         <h3
           ref={subheadingRef}
-          className={`text-pink-500 text-lg font-semibold tracking-wider mb-4 ${
+          className={`text-light-purple text-lg font-semibold tracking-wider mb-4 ${
             subheadingInView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[-50px]'
           } transition-all duration-700 ease-out`}
         >
@@ -33,12 +33,12 @@ export default function ObjectiveSection() {
           } transition-all duration-700 ease-out`}
         >
           Helping You Grow In Youtube Automation By Teaching You Everything...
-          <span className="text-pink-500 underline">Plus</span> Give You The Complete Path And Guidance To Make Your First
-          <span className="text-green-400"> $1000</span> From Youtube In Record Time.
+          <span className="">Plus</span> Give You The Complete Path And Guidance To Make Your First
+          <span className=""> $1000</span> From Youtube In Record Time.
         </h1>
 
         {/* Decorative Divider */}
-        <div className="w-24 h-1 bg-pink-500 mx-auto mb-8"></div>
+        {/* <div className="w-24 h-1 bg-pink-500 mx-auto mb-8"></div> */}
 
         {/* Description */}
         <p
@@ -64,7 +64,7 @@ export default function ObjectiveSection() {
             <span className="font-bold text-yellow-400">Money Printing Systems</span> - Complete files and documents with strict guidelines to make sure your every piece of content is being created to go viral.
           </li>
           <li className="text-lg sm:text-xl bg-gray-800 p-4 rounded-lg shadow-lg animate-delay-400">
-            <span className="font-bold text-green-400">THE SECRET ELIXZOR SAUCE</span> - The one and only way to start making money from your YouTube Channel from <span className="font-bold text-pink-500">DAY 1</span>.
+            <span className="font-bold text-green-600">THE SECRET ELIXZOR SAUCE</span> - The one and only way to start making money from your YouTube Channel from <span className="font-bold text-pink-500">DAY 1</span>.
           </li>
         </ul>
 

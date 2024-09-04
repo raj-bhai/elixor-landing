@@ -66,7 +66,7 @@ export default function LandingSection() {
 
       {/* Heading Section */}
       <div className="relative z-10 text-center pt-6 sm:w-[80%] md:w-[70%] lg:w-[60%] w-[90%] font-sans">
-        <h3 className="text-purple-400 text-2xl sm:text-2xl font-semibold tracking-wide">
+        <h3 className="text-light-purple text-2xl sm:text-2xl font-semibold tracking-wide">
           FINALLY...
         </h3>
         <h1 className="text-3xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-wider mt-4 leading-tight">

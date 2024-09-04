@@ -13,7 +13,8 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "purple" : "#0e041f"
+        "purple" : "#0e041f",
+        "light-purple" : "#ad00ff"
       },
       fontFamily: {
         sans: ['"New Amsterdam"', 'sans-serif'],
