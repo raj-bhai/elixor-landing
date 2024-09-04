@@ -48,7 +48,7 @@ export default function PricingSection() {
             className="mt-4 py-3 px-6 rounded-full bg-green-600 hover:bg-green-700 text-white text-xl font-semibold"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
-            onClick={() => handleCheckout("price_1PvHXJSB8NyItH1Jre6dYP1I")} // Replace with actual price ID
+            onClick={() => handleCheckout("price_1PvIPdSB8NyItH1Jn3cWwaH3")} // Replace with actual price ID
           >
             Get Access Now!
           </motion.button>
@@ -80,7 +80,7 @@ export default function PricingSection() {
             className="mt-4 py-3 px-6 rounded-full bg-green-600 hover:bg-green-700 text-white text-xl font-semibold"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
-            onClick={() => handleCheckout("price_1PvHXOSB8NyItH1J1cM2Bf92")} // Replace with actual price ID
+            onClick={() => handleCheckout("price_1PvIQISB8NyItH1J4DN6WQ6T")} // Replace with actual price ID
           >
             Get Access Now!
           </motion.button>
@@ -111,7 +111,7 @@ export default function PricingSection() {
             className="mt-4 py-3 px-6 rounded-full bg-green-600 hover:bg-green-700 text-white text-xl font-semibold"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
-            onClick={() => handleCheckout("price_1PvHXSSB8NyItH1JaBF7okEC")} // Replace with actual price ID
+            onClick={() => handleCheckout("price_1PvIQzSB8NyItH1JodurhIIL")} // Replace with actual price ID
           >
             Get Access Now!
           </motion.button>
