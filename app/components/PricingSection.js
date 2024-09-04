@@ -8,10 +8,10 @@ export default function PricingSection() {
   const stripe = useStripe();
 
   const handleCheckout = async (priceId) => {
-    console.log('hello')
+    console.log("hello");
     try {
       const response = await axios.post("/api/checkout", { priceId });
-      console.log('response :', response)
+      console.log("response :", response);
       const { sessionId } = response.data;
       const { error } = await stripe.redirectToCheckout({ sessionId });
       if (error) {
@@ -23,7 +23,7 @@ export default function PricingSection() {
   };
 
   return (
-    <section className="relative w-screen md:w-full bg-black text-white py-16 px-4 flex flex-col items-center overflow-hidden">
+    <section className="relative font-sans w-screen md:w-full bg-black text-white py-16 px-4 flex flex-col items-center overflow-hidden">
       <div className="flex flex-col sm:flex-row justify-center items-center space-y-8 sm:space-y-0 sm:space-x-8 w-full max-w-5xl">
         {/* First Pricing Box */}
         <motion.div
@@ -37,7 +37,9 @@ export default function PricingSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-5xl font-bold text-white mb-4">$499</h2>
+          <h2 className="text-5xl font-bold text-white mb-4 border-b-4 border-light-purple inline-block">
+            $499
+          </h2>
           <div className="h-[2px] bg-purple-500 mb-4"></div>
           <ul className="text-lg space-y-2 mb-8">
             <li>- 1 Month Cohort</li>
@@ -66,7 +68,9 @@ export default function PricingSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
-          <h2 className="text-5xl font-bold text-white mb-4">$1,499</h2>
+          <h2 className="text-5xl font-bold text-white mb-4 border-b-4 border-light-purple inline-block">
+            $1499
+          </h2>
           <div className="h-[2px] bg-purple-500 mb-4"></div>
           <ul className="text-lg space-y-2 mb-8">
             <li>- 3 Month Cohort</li>
@@ -88,7 +92,7 @@ export default function PricingSection() {
 
         {/* Third Pricing Box */}
         <motion.div
-          className="p-8 rounded-lg bg-gradient-to-b from-purple-900 to-black text-center shadow-lg flex-1 mx-4 border-2 border-transparent"
+          className="p-8 rounded-lg bg-gradient-to-b from-purple-500 to-black text-center shadow-lg flex-1 mx-4 border-2 border-transparent"
           whileHover={{
             scale: 1.03,
             borderColor: "#34D399",
@@ -98,7 +102,9 @@ export default function PricingSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
         >
-          <h2 className="text-5xl font-bold text-white mb-4">$14,999</h2>
+          <h2 className="text-5xl font-bold text-white mb-4 border-b-4 border-light-purple inline-block">
+            $14999
+          </h2>
           <div className="h-[2px] bg-purple-500 mb-4"></div>
           <ul className="text-lg space-y-2 mb-8">
             <li>

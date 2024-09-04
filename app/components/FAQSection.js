@@ -10,7 +10,7 @@ const FAQItem = ({ question, answer, isInView }) => {
 
   return (
     <motion.div
-      className={`p-4 border-b border-purple-600 cursor-pointer transition-colors duration-300 ${
+      className={`p-4 font-sans border-b border-purple-600 cursor-pointer transition-colors duration-300 ${
         isOpen
           ? "bg-gradient-to-r from-[#3A0E4F] via-[#1D0631] to-[#3A0E4F]"
           : "bg-transparent"
