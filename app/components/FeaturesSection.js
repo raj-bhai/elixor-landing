@@ -12,7 +12,7 @@ export default function FeaturesSection() {
       <div className="text-center max-w-4xl mx-auto relative">
         {/* Subheading with Motion */}
         <motion.h3
-          className="text-purple-500 text-lg font-semibold tracking-wider mb-4"
+          className="text-light-purple text-lg font-semibold tracking-wider mb-4"
           initial={{ opacity: 0, y: -20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
           transition={{ duration: 0.6 }}

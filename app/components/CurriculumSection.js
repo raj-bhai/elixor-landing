@@ -27,27 +27,32 @@ export default function CurriculumSection() {
   ];
 
   return (
-    <section ref={ref} className="relative w-screen sm:w-full bg-black text-white py-16 px-4 sm:px-8 flex flex-col items-center overflow-hidden">
-      {/* Subtle Moving Circular Background */}
-      {inView && (
-        <motion.div
-          className="absolute w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-gradient-to-r from-purple to-purple rounded-full z-0 opacity-50"
-          animate={{
-            x: ["-20%", "120%"],
-            y: ["0%", "30%", "-20%"],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-          style={{
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
+    <section ref={ref} className="relative w-screen sm:w-screen bg-black text-white py-16 px-4 sm:px-32 flex flex-col items-center overflow-hidden">
+<div
+        className=" absolute top-1/4 sm:top-1/3 transform -translate-y-1/2 overflow-hidden z-0 transition-transform duration-300"
+        // style={{ left: `calc(-55% + ${movement}%)` }}
+        style={{ left: `calc(-45%)` }}
+      >
+        <img 
+          src="/images/bg-circle.png"  // Ensure this is the correct path to your image
+          alt="Background Circle Left"
+          className="sm:h-[150%] object-cover opacity-50"
         />
-      )}
+      </div>
+
+      {/* Background Circle Image on the Right */}
+      <div
+        className="absolute sm:top-1/3 top-2/3 transform -translate-y-1/2 overflow-hidden z-0 transition-transform duration-300"
+        // style={{ right: `calc(-55% + ${movement}%)` }}
+        style={{ right: `calc(-45%)` }}
+      >
+        <img 
+          src="/images/bg-circle.png"  // Ensure this is the correct path to your image
+          alt="Background Circle Right"
+          className="h-[150%] object-cover opacity-50 "
+          style={{ transform: 'scaleX(-1)' }}
+        />
+      </div>
 
       {/* Cohort Curriculum Section with Animation */}
       {inView && (
@@ -57,7 +62,7 @@ export default function CurriculumSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-wider leading-tight">
+          <h2 className="text-2xl text-light-purple sm:text-3xl font-bold uppercase tracking-wider leading-tight">
             COHORT CURRICULUM
           </h2>
         </motion.div>
@@ -93,12 +98,12 @@ export default function CurriculumSection() {
       </div>
 
       {/* Image and CTA Button Section */}
-      <div className="relative w-full sm:w-[60%] lg:w-[50%] flex flex-col items-center mb-4 z-10">
+      <div className="relative w-full sm:w-[60%] lg:w-[50%] flex flex-col items-center mb-1 z-10">
         <Image
           src="/images/youtube-gift.png" 
           alt="YouTube Awards"
-          width={600}
-          height={300}
+          width={400}
+          height={200}
           className="object-contain"
         />
       </div>

@@ -7,7 +7,7 @@ export default function CoachingFeaturesSection() {
   return (
     <section className="relative w-screen sm:w-full bg-black text-white py-16 px-4 flex flex-col items-center overflow-hidden">
       <div className="text-center mb-12">
-        <h3 className="text-purple-500 text-lg sm:text-xl font-semibold tracking-wider mb-2">
+        <h3 className="text-light-purple text-lg sm:text-xl font-semibold tracking-wider mb-2">
           EVERYTHING YOU GET...
         </h3>
         <h1 className="text-3xl sm:text-4xl font-bold uppercase tracking-wider leading-tight">

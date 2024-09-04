@@ -10,21 +10,19 @@ export default function ResultsSection() {
   const slides = [
     {
       id: 1,
-      title: "Achieved $5000+ Monthly Revenue",
-      description: "How we helped a client achieve $5000+ monthly revenue in just 3 months.",
-      icon: FaDollarSign,
+      image: '/images/testimonial1.png'
     },
     {
       id: 2,
-      title: "1 Million Subscribers in 6 Months",
-      description: "Scaling from zero to 1 million subscribers with our YouTube automation techniques.",
-      icon: FaChartLine,
+      image: '/images/testimonial2.png'
     },
     {
       id: 3,
-      title: "Turning a Hobby into a Six-Figure Career",
-      description: "Turning a hobby into a full-time career with consistent six-figure earnings.",
-      icon: FaTrophy,
+      image: '/images/testimonial3.png'
+    },
+    {
+      id: 3,
+      image: '/images/testimonial4.png'
     },
   ];
 
@@ -75,7 +73,7 @@ export default function ResultsSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-black font-sans text-white py-16 px-4 sm:px-8  sm:w-full w-screen overflow-hidden"
+      className="relative bg-black font-sans text-white py-16 px-4 sm:px-8 lg:px-32  sm:w-full w-screen overflow-hidden"
     >
       {/* Left Background Half-Circle */}
       <motion.div
@@ -85,10 +83,10 @@ export default function ResultsSection() {
         transition={{ duration: 1 }}
         style={{
           scale,
-          clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%)',
+          clipPath: "polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%)",
         }}
       >
-        <Image 
+        <Image
           src="/images/bg-circle.png"
           alt="Background Half Circle Left"
           width={300}
@@ -104,22 +102,22 @@ export default function ResultsSection() {
         transition={{ duration: 1 }}
         style={{
           scale,
-          clipPath: 'polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%)',
+          clipPath: "polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%)",
         }}
       >
-        <Image 
+        <Image
           src="/images/bg-circle.png"
           alt="Background Half Circle Right"
           width={300}
           height={300}
-          style={{ transform: 'scaleX(-1)' }}
+          style={{ transform: "scaleX(-1)" }}
         />
       </motion.div>
 
       <div className="max-w-6xl mx-auto text-center relative z-10">
         {/* Heading */}
         <motion.h3
-          className="text-purple-500 text-lg font-semibold tracking-wider mb-2"
+          className="text-light-purple text-lg font-semibold tracking-wider mb-2"
           initial="hidden"
           animate={controls}
           variants={{
@@ -145,7 +143,7 @@ export default function ResultsSection() {
 
         {/* Carousel */}
         <motion.div
-          className="relative bg-gradient-to-b from-purple-900 to-black h-[300px] sm:h-[350px] lg:h-[450px] rounded-lg mb-8 flex items-center justify-between overflow-hidden shadow-lg"
+          className="relative border border-light-purple  bg-gradient-to-b from-purple to-black h-[300px] sm:h-[350px] lg:h-[450px] rounded-lg mb-8 flex items-center justify-between overflow-hidden shadow-lg"
           initial="hidden"
           animate={controls}
           variants={{
@@ -165,13 +163,20 @@ export default function ResultsSection() {
             &#9664;
           </button>
 
-          <div className="relative w-full h-full flex items-center justify-center p-4 sm:p-8">
+          <div className="relative border w-full h-full flex items-center justify-center p-4 sm:p-8">
             <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="text-6xl sm:text-7xl text-purple-400">
-                {React.createElement(slides[currentIndex].icon)}
+              <div className="relative w-full h-full p-4 sm:p-32 flex items-center justify-center">
+                <div className="relative w-full h-full">
+                  {" "}
+                  {/* Inner wrapper to contain the image */}
+                  <Image
+                    src={slides[currentIndex].image}
+                    alt="Background Half Circle Right"
+                    layout="fill" // Fills the inner container
+                    objectFit="cover" // Maintains aspect ratio
+                  />
+                </div>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-bold">{slides[currentIndex].title}</h2>
-              <p className="text-lg sm:text-xl max-w-2xl">{slides[currentIndex].description}</p>
             </div>
           </div>
 
