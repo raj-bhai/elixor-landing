@@ -70,12 +70,12 @@ export default function FAQSection() {
   return (
     <section
       ref={ref}
-      className="relative overflow-y-hidden overflow-x-hidden w-screen bg-black text-white py-16 px-8 flex flex-col items-center"
+      className="relative font-sans overflow-y-hidden overflow-x-hidden w-screen bg-black text-white py-16 px-8 flex flex-col items-center"
     >
       <div className="max-w-4xl mx-auto relative text-center">
         {/* Subheading */}
         <motion.h3
-          className="text-purple-500 text-lg font-semibold tracking-wider mb-4"
+          className="text-light-purple text-lg font-semibold tracking-wider mb-4"
           initial={{ opacity: 0, y: -20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
