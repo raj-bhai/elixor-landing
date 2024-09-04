@@ -17,7 +17,7 @@ export async function POST(request) {
         },
       ],
       success_url: `${request.headers.get('origin')}/success`,
-      cancel_url: `${request.headers.get('origin')}/cancel`,
+      cancel_url: `${request.headers.get('origin')}/`,
     });
 
     return NextResponse.json({ sessionId: session.id });
