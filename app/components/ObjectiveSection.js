@@ -37,9 +37,6 @@ export default function ObjectiveSection() {
           <span className=""> $1000</span> From Youtube In Record Time.
         </h1>
 
-        {/* Decorative Divider */}
-        {/* <div className="w-24 h-1 bg-pink-500 mx-auto mb-8"></div> */}
-
         {/* Description */}
         <p
           ref={descriptionRef}
@@ -58,13 +55,13 @@ export default function ObjectiveSection() {
           } transition-all duration-700 ease-out`}
         >
           <li className="text-lg sm:text-xl bg-gray-800 p-4 rounded-lg shadow-lg">
-            <span className="font-bold text-pink-500">KEYS TO YTA SUCCESS</span> - Hours of coaching where you will learn all the secret ways to get successful in record time and build a money printing machine from your YouTube Automation Channel.
+            <span className="font-bold text-light-purple">KEYS TO YTA SUCCESS</span> - Hours of coaching where you will learn all the secret ways to get successful in record time and build a money printing machine from your YouTube Automation Channel.
           </li>
           <li className="text-lg sm:text-xl bg-gray-800 p-4 rounded-lg shadow-lg animate-delay-200">
             <span className="font-bold text-yellow-400">Money Printing Systems</span> - Complete files and documents with strict guidelines to make sure your every piece of content is being created to go viral.
           </li>
           <li className="text-lg sm:text-xl bg-gray-800 p-4 rounded-lg shadow-lg animate-delay-400">
-            <span className="font-bold text-green-600">THE SECRET ELIXZOR SAUCE</span> - The one and only way to start making money from your YouTube Channel from <span className="font-bold text-pink-500">DAY 1</span>.
+            <span className="font-bold text-green-400">THE SECRET ELIXZOR SAUCE</span> - The one and only way to start making money from your YouTube Channel from <span className="font-bold text-light-purple">DAY 1</span>.
           </li>
         </ul>
 

@@ -21,7 +21,7 @@ export default function Schedule() {
       </h2>
       <div
         className="calendly-inline-widget"
-        data-url="https://calendly.com/elixzor-yta/discovery-call"
+        data-url="https://calendly.com/elixzor-yta/youtube-discovery-call-clone"
         style={{ minWidth: "320px", height: "700px", width: "100%" }}
       ></div>
     </section>
