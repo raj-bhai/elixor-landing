@@ -16,7 +16,7 @@ export async function POST(request) {
           quantity: 1,
         },
       ],
-      success_url: `${request.headers.get('origin')}/success`,
+      success_url: `${request.headers.get('origin')}/thank-you`,
       cancel_url: `${request.headers.get('origin')}/`,
     });
 
