@@ -56,7 +56,7 @@ export default function Footer() {
               Follow Us
             </h3>
             <a
-              href="https://www.instagram.com/elixzor"
+              href="https://www.instagram.com/elixzor_consulting"
               className="inline-block p-2 border border-light-purple rounded-full hover:bg-yellow-400 hover:text-black transition duration-300"
               aria-label="Instagram"
             >
