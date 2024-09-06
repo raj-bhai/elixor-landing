@@ -1,4 +1,5 @@
 import { FaInstagram } from "react-icons/fa"; // Importing Font Awesome's Instagram icon
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -31,20 +32,20 @@ export default function Footer() {
             </h3>
             <ul className="space-y-1">
               <li>
-                <a
+                <Link
                   href="/privacy-policy"
                   className="underline hover:text-light-purple transition duration-300"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/terms-and-conditions"
                   className="underline hover:text-light-purple transition duration-300"
                 >
                   Terms and Conditions
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
