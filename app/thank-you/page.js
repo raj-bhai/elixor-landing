@@ -34,10 +34,14 @@ export default function ThankYouPage() {
 
       {/* Video Section */}
       <div className="w-full sm:w-[600px] sm:h-[300px] h-[250px] mb-8 bg-black rounded-md overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 ease-in-out">
-        <video controls className="w-full h-full">
-          <source src="/path-to-your-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <iframe
+          className="w-full h-full object-cover"
+          src="https://www.youtube.com/embed/KLbsSrxsu_E?controls=0&rel=0&modestbranding=1"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </div>
 
       <Footer />

@@ -78,10 +78,14 @@ export default function LandingSection() {
       {/* Video Placeholder */}
       <div className="relative z-10 flex justify-center items-center mt-8 sm:mt-12 w-full">
         <div className="w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-2xl h-[200px] sm:h-[300px] md:h-[350px] lg:h-[350px] bg-[#000] rounded-lg shadow-xl overflow-hidden">
-          <video className="w-full h-full object-cover" controls>
-            <source src="/videos/sample-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <iframe
+            className="w-full h-full object-cover"
+            src="https://www.youtube.com/embed/WVvH17HPBzU?controls=0&rel=0&modestbranding=1"
+            title="YouTube video player"
+            // frameBorder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            // allowFullScreen
+          ></iframe>
         </div>
       </div>
 
