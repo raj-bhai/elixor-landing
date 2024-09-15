@@ -10,7 +10,7 @@ import {
 import CTAButton from "./CTAButton";
 import Image from "next/image";
 
-export default function ResultsSection() {
+export default function ResultsSection(props) {
   const slides = [
     {
       id: 1,
@@ -243,10 +243,13 @@ export default function ResultsSection() {
           }}
           transition={{ duration: 1 }}
         >
-          <CTAButton
+          {
+            !props.hideCTA &&
+            <CTAButton
             text="YES! I WANT TO START"
             subtext="Limited seats available, so book your slot before they run out."
           />
+          }
         </motion.div>
       </div>
     </section>

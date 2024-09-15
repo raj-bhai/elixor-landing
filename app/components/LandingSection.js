@@ -66,7 +66,7 @@ export default function LandingSection() {
 
       {/* Heading Section */}
       <div className="relative z-10 text-center pt-6 sm:w-[80%] md:w-[70%] lg:w-[60%] w-[90%] font-sans">
-        <h3 className="text-light-purple text-2xl sm:text-2xl font-semibold tracking-wide">
+        <h3 className="text-light-purple text-2xl sm:text-3xl font-semibold tracking-wide">
           FINALLY...
         </h3>
         <h1 className="text-3xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-wider mt-4 leading-tight">
@@ -77,7 +77,7 @@ export default function LandingSection() {
 
       {/* Video Placeholder */}
       <div className="relative z-10 flex justify-center items-center mt-8 sm:mt-12 w-full">
-        <div className="w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-2xl h-[200px] sm:h-[300px] md:h-[350px] lg:h-[350px] bg-[#000] rounded-lg shadow-xl overflow-hidden">
+        <div className="w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl h-[200px] sm:h-[300px] md:h-[350px] lg:h-[380px] bg-[#000] rounded-lg shadow-xl overflow-hidden">
         <iframe
             className="w-full h-full object-cover"
             src="https://www.youtube.com/embed/WVvH17HPBzU?controls=0&rel=0&modestbranding=1"
@@ -138,7 +138,7 @@ export default function LandingSection() {
               d="M9 12l4 4 8-8"
             />
           </svg>
-          <p className="ml-3 text-lg sm:text-xl font-semibold">
+          <p className="ml-3 text-lg sm:text-2xl font-semibold">
             1:1 PERSONAL COACHING
           </p>
         </div>
@@ -165,7 +165,7 @@ export default function LandingSection() {
               d="M9 12l4 4 8-8"
             />
           </svg>
-          <p className="ml-3 text-lg sm:text-xl font-semibold">
+          <p className="ml-3 text-lg sm:text-2xl font-semibold">
             GUARANTEED RESULTS
           </p>
         </div>
@@ -193,7 +193,7 @@ export default function LandingSection() {
             />
           </svg>
 
-          <p className="ml-3 text-lg sm:text-xl font-semibold">
+          <p className="ml-3 text-lg sm:text-2xl font-semibold">
             NO EXPERIENCE NEEDED
           </p>
         </div>

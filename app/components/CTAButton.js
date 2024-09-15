@@ -7,12 +7,12 @@ export default function CTAButton({ text, onClick, subtext }) {
         onClick={() => {
             window.open('https://calendly.com/elixzor-yta/youtube-discovery-call-clone');
         }}
-        className="bg-gradient-to-r from-[#6B03B0] to-[#270049] hover:from-[#A32CC4] hover:to-[#600080] text-white font-bold py-4 px-8 sm:px-10 md:px-12 rounded-full text-base sm:text-lg md:text-xl shadow-lg transition"
+        className="bg-gradient-to-r from-[#6B03B0] to-[#270049] hover:from-[#A32CC4] hover:to-[#600080] text-white font-bold py-4 px-8 sm:px-10 md:px-12 rounded-full text-base sm:text-lg md:text-2xl shadow-lg transition"
       >
         {text}
       </button>
       {subtext && (
-        <p className="text-center text-xs sm:text-sm mt-1">
+        <p className="text-center text-xs sm:text-lg mt-1">
           {subtext}
         </p>
       )}

@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ResultsSection from '../components/ResultsSection';
 
 export default function ThankYouPage() {
   return (
@@ -33,7 +34,7 @@ export default function ThankYouPage() {
       </div>
 
       {/* Video Section */}
-      <div className="w-full sm:w-[600px] sm:h-[300px] h-[250px] mb-8 bg-black rounded-md overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 ease-in-out">
+      <div className="w-full sm:w-[800px] sm:h-[370px] h-[250px] mb-8 bg-black rounded-md overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 ease-in-out">
       <iframe
           className="w-full h-full object-cover"
           src="https://www.youtube.com/embed/KLbsSrxsu_E?controls=0&rel=0&modestbranding=1"
@@ -43,6 +44,10 @@ export default function ThankYouPage() {
           allowFullScreen
         ></iframe>
       </div>
+
+      <ResultsSection
+      hideCTA
+      />
 
       <Footer />
     </main>
