@@ -21,7 +21,7 @@ export default function Schedule() {
       </h2>
       <div
         className="calendly-inline-widget"
-        data-url="https://calendly.com/paul-elixzorconsulting/yta"
+        data-url="https://calendly.com/paul-elixzorconsulting/yta-cohort-call"
         style={{ minWidth: "320px", height: "700px", width: "100%" }}
       ></div>
     </section>
